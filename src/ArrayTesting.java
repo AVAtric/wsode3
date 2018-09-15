@@ -1,10 +1,10 @@
 import java.util.Arrays;
 
 /**
+ * ArrayTesting ist eine Klasse zum veranschaulichen von Array-Funktionen.
+ *
  * @author Adnan Vatric
  * @version v 1.0
- *
- * ArrayTesting ist eine Klasse zum veranschaulichen von Array-Funktionen.
  */
 public class ArrayTesting {
 
@@ -14,13 +14,13 @@ public class ArrayTesting {
      * @param args hier wird nichts übergeben.
      */
     public static void main(String[] args) {
-        int[] x = { 7, 12, 3, 9 };
+        int[] x = { 7, 12, 3, 9, 7, 20 };
+
         m1(x);
         System.out.println(Arrays.toString(x));
 
-        x = m2(5);
-
-        System.out.println(Arrays.toString(x));
+        int[] x1 = m2(5);
+        System.out.println(Arrays.toString(x1));
 
         m3(x);
     }
@@ -50,11 +50,12 @@ public class ArrayTesting {
     }
 
     /**
+     * Das übergebene Array wird sortiert und auf der Konsole
+     * ausgegeben.
      *
-     * @param x
+     * @param ar Ein Array mit unsortiere Int Daten.
      */
-    private static void m3(int[] x) {
-        int[] ar = { 10, 5, 30, 7, 20, 9 };
+    private static void m3(int[] ar) {
         Arrays.sort(ar);
         System.out.println(Arrays.toString(ar));
     }

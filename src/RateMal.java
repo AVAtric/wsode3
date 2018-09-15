@@ -1,4 +1,16 @@
+/**
+ * RateMal dient zur veranschaulichung der Benutzung der Math-Klasse.
+ *
+ * @author Adnan Vatric
+ * @version v 1.0
+ */
 public class RateMal {
+    /**
+     * Eine Zahl muss über die Konsole eingegeben Werden und diese wird mit
+     * einer zufällig generierten Zahl verglichen.
+     *
+     * @param args Es werde keine Parameter verwendet.
+     */
     @SuppressWarnings("resource")
     public static void main(String[] args) {
         int zahl = (int) (1 + Math.random() * 9);
