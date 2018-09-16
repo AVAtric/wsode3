@@ -13,9 +13,13 @@ public class RateMal {
      */
     @SuppressWarnings("resource")
     public static void main(String[] args) {
-        int zahl = (int) (1 + Math.random() * 9);
+        int zahl = (int) (1 + Math.random() * 9); // Zufällige Zahl zwischen 1 und 9 erstellen
+
+        // User gibt eine Zahl ein
         System.out.println("Welche Zahl denke ich mir zwischen 1 und 9?");
         int raten = new java.util.Scanner(System.in).nextInt();
+
+        // Zahl prüfen
         if (zahl == raten)
             System.out.println("Glück gehabt!");
         else

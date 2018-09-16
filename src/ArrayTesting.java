@@ -14,15 +14,15 @@ public class ArrayTesting {
      * @param args hier wird nichts übergeben.
      */
     public static void main(String[] args) {
-        int[] x = { 7, 12, 3, 9, 7, 20 };
+        int[] x = { 7, 12, 3, 9, 7, 20 }; // Werte werden initialisiert
 
-        m1(x);
-        System.out.println(Arrays.toString(x));
+        m1(x); // Werte in Array werden mit 2 multipliziert
+        System.out.println(Arrays.toString(x)); // Array wird ausgegeben
 
-        int[] x1 = m2(5);
-        System.out.println(Arrays.toString(x1));
+        int[] x1 = m2(5); // Neues Array mit der Länge 5 wird erstellt
+        System.out.println(Arrays.toString(x1)); // Array wird ausgegeben
 
-        m3(x);
+        m3(x); // Array wird sortiert und ausgegeben
     }
 
     /**
@@ -32,7 +32,7 @@ public class ArrayTesting {
      */
     private static void m1(int[] ar) {
         for (int i = 0; i < ar.length; i++)
-            ar[i] *= 2;
+            ar[i] *= 2; // Wert mit 2 multiplizieren und zurück speichern
     }
 
     /**
@@ -43,10 +43,10 @@ public class ArrayTesting {
      * @return Das erzeugte Array
      */
     private static int[] m2(int n) {
-        int[] ar = new int[n];
+        int[] ar = new int[n]; // Array initieren
         for (int i = 0; i < n; i++)
-            ar[i] = i;
-        return ar;
+            ar[i] = i; // Wert ist der selbe wie der Index
+        return ar; // Array zurück gegeben
     }
 
     /**
@@ -56,7 +56,7 @@ public class ArrayTesting {
      * @param ar Ein Array mit unsortiere Int Daten.
      */
     private static void m3(int[] ar) {
-        Arrays.sort(ar);
-        System.out.println(Arrays.toString(ar));
+        Arrays.sort(ar); // Array sortieren
+        System.out.println(Arrays.toString(ar)); // Array ausgeben
     }
 }

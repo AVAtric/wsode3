@@ -12,11 +12,12 @@ public class ExampleWhile {
      * @param args Zurzeit werden keine Parameter verwendet.
      */
     public static void main(String[] args) {
-        int i = 0;
+        int i = 0; // i initialisieren
 
-        while (i < 10) {
+        // Schleife durchlaufen solang i kleiner 10 ist
+        do {
             System.out.println(String.format("Loop %d", i));
             i++;
-        }
+        } while (i < 10);
     }
 }

@@ -15,12 +15,19 @@ public class LokaleEinstellungen {
      * @param args Es werden keine Paramaeter verwendet.
      */
     public static void main(String[] args){
-        Locale locale = Locale.getDefault();
+        Locale locale = Locale.getDefault(); // Localizationseinstellungen abrufen
+
+        // Einstellungen ausgeben
         System.out.println("Country: " + locale.getCountry());
         System.out.println("Language: " + locale.getLanguage());
-        TimeZone tz = TimeZone.getDefault();
+
+        TimeZone tz = TimeZone.getDefault(); // Zeitzonen Einstellungen abrufen
+
+        // Einstellungen ausgeben
         System.out.println("Timezone: " + tz.getDisplayName());
         System.out.println("Sommerzeit: " + tz.useDaylightTime());
+
+        // Programm beenden
         System.exit(0);
     }
 }

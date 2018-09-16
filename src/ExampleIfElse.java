@@ -12,10 +12,14 @@ public class ExampleIfElse {
      */
     public static void main(String[] args) {
 
-        if (args.length == 0) {
-            System.out.println("No parameters found !");
-        } else {
-            System.out.println("Found " + args.length + " parameters.");
+        // Überprüfung ob Parameter übergeben worden sind
+        switch (args.length){
+            case 0:
+                System.out.println("No parameters found !");
+                break;
+             default:
+                 System.out.println("Found " + args.length + " parameters.");
+                 break;
         }
     }
 }

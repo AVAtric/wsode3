@@ -12,11 +12,13 @@ public class Student {
      * @param args Es werden keine Parameter verwendet.
      */
     public static void main(String[] args) {
-        String name = "Franz L. Kopica";
-        int age = 53;
-        double income = 100000;
-        char sex = 'm';
-        boolean isStudent = false;
+        String name = "Franz L. Kopica"; // Name initialisieren
+        int age = 53; // Alter initialisieren
+        double income = 100000; // Einkommen initialisieren
+        char sex = 'm'; // Geschlecht initialisieren
+        boolean isStudent = false; // Studenten-Flag setzen
+
+        // Ausgabe der Variablen
         System.out.println("String : " + name);
         System.out.println("Int : " + age);
         System.out.println("Double : " + income);
