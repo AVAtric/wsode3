@@ -27,7 +27,7 @@ public class ArrayTesting {
 
     /**
      * Jedes Element des Arrays wird mit 2 multipliziert.
-     *
+     *test
      * @param ar Ein Array mit Integer-Werten.
      */
     private static void m1(int[] ar) {
