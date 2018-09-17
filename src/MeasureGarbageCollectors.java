@@ -19,7 +19,7 @@ public class MeasureGarbageCollectors {
 
         rt.gc(); // gc Speicher aufräumen lassen
 
-        // Freier speicher nachdem der gc gelaufen ist
+        // Freier Speicher nachdem der gc gelaufen ist
         System.out.println("Free Memory after running gc: " + rt.freeMemory());
     }
 }
